@@ -167,3 +167,5 @@ Automated deployments ensure your code is always up-to-date on AWS Lambda withou
 ## 📝 License
 
 MIT — an open-source serverless AI code review platform.
+
+✅ **Last Updated:** June 7, 2026 - Documentation maintained and deployment workflow verified.
