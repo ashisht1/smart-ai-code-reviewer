@@ -1,6 +1,6 @@
 # 🤖 Smart AI Code Reviewer
 
-A **serverless, Git-like AI code review platform** built for the Careem AI Challenge. Paste Python code, set custom coding guidelines, and receive instant deep code reviews powered by **Google Gemini AI** — all running on **AWS Lambda** with zero external dependencies.
+A **serverless, Git-like AI code review platform**. Paste Python code, set custom coding guidelines, and receive instant deep code reviews powered by **Google Gemini 2.5 Flash**.
 
 🔗 **Live App:** [https://8ftqsyucec.execute-api.us-east-1.amazonaws.com](https://8ftqsyucec.execute-api.us-east-1.amazonaws.com)
 
@@ -13,7 +13,7 @@ A **serverless, Git-like AI code review platform** built for the Careem AI Chall
 | 🌐 **Serverless Web UI** | Git-like dark-themed interface served directly from AWS Lambda |
 | 📊 **AST Static Analysis** | Computes lines, functions, classes, complexity, docstring coverage using Python's `ast` module |
 | 🤖 **Gemini AI Review** | Deep semantic review using Google Gemini 2.5 Flash — readability, design, bugs, and actionable fixes |
-| 📝 **Custom Guidelines** | Paste any coding standards or team rules for the AI to follow during review |
+| 📝 **Custom Guidelines** | Create and save custom coding standards in a dedicated guidelines tab for persistent use |
 | ⚡ **Zero Dependencies** | Uses only Python stdlib (`ast`, `urllib`) — no packages needed on Lambda |
 | 🚀 **One-Command Deploy** | `deploy_to_aws.py` automates IAM, Lambda, and API Gateway setup end-to-end |
 
@@ -96,7 +96,7 @@ The script will:
 
 ## 📋 Custom Guidelines
 
-Create or edit `guidelines.txt` to define your team's coding standards:
+Create or edit guidelines in the **Guidelines** tab to define your team's coding standards. Your guidelines are saved locally in your browser and will be used for all future reviews:
 
 ```
 Review code as a Staff Software Engineer.
@@ -142,4 +142,4 @@ Lambda Function URLs return `403 Forbidden` on root AWS accounts due to account-
 
 ## 📝 License
 
-MIT — built as part of the Careem AI Engineering Challenge.
+MIT — an open-source serverless AI code review platform.
