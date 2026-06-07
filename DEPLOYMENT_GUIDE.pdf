@@ -1,0 +1,275 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/Resources <<
+/Font <<
+/F1 4 0 R
+/F2 5 0 R
+>>
+>>
+/MediaBox [0 0 612 792]
+/Contents 6 0 R
+>>
+endobj
+
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+6 0 obj
+<<
+/Length 3200
+>>
+stream
+BT
+/F1 24 Tf
+50 750 Td
+(Smart AI Code Reviewer) Tj
+ET
+
+BT
+/F2 12 Tf
+50 720 Td
+(Deployment Guide & Access Information) Tj
+ET
+
+BT
+/F1 14 Tf
+50 680 Td
+(Application Successfully Deployed!) Tj
+ET
+
+BT
+/F2 11 Tf
+50 650 Td
+(Live Application URL:) Tj
+ET
+
+BT
+/F1 12 Tf
+50 630 Td
+(https://8ftqsyucec.execute-api.us-east-1.amazonaws.com/) Tj
+ET
+
+BT
+/F2 11 Tf
+50 600 Td
+(Click the URL above to access your Smart AI Code Reviewer running on AWS Lambda.) Tj
+ET
+
+BT
+/F1 14 Tf
+50 560 Td
+(Features & Capabilities) Tj
+ET
+
+BT
+/F2 11 Tf
+50 535 Td
+(Code Analysis:) Tj
+ET
+
+BT
+/F2 10 Tf
+60 520 Td
+(- Paste Python code for automated AI-powered review) Tj
+ET
+
+BT
+/F2 10 Tf
+60 505 Td
+(- Static AST-based code metrics and analysis) Tj
+ET
+
+BT
+/F2 10 Tf
+60 490 Td
+(- Custom review guidelines) Tj
+ET
+
+BT
+/F1 12 Tf
+50 460 Td
+(Metrics Dashboard:) Tj
+ET
+
+BT
+/F2 10 Tf
+60 445 Td
+(- Total Lines of Code) Tj
+ET
+
+BT
+/F2 10 Tf
+60 430 Td
+(- Number of Functions & Classes) Tj
+ET
+
+BT
+/F2 10 Tf
+60 415 Td
+(- Code Complexity (Decision Points)) Tj
+ET
+
+BT
+/F2 10 Tf
+60 400 Td
+(- Missing Docstrings) Tj
+ET
+
+BT
+/F2 10 Tf
+60 385 Td
+(- Global State Analysis) Tj
+ET
+
+BT
+/F1 12 Tf
+50 355 Td
+(AI-Powered Review Sections:) Tj
+ET
+
+BT
+/F2 10 Tf
+60 340 Td
+(1. Executive Summary - General code quality rating) Tj
+ET
+
+BT
+/F2 10 Tf
+60 325 Td
+(2. Readability & Styling - Naming, style, comments) Tj
+ET
+
+BT
+/F2 10 Tf
+60 310 Td
+(3. Design & Structure - Architecture, modularity) Tj
+ET
+
+BT
+/F2 10 Tf
+60 295 Td
+(4. Maintainability & Bugs - Error handling, edge cases) Tj
+ET
+
+BT
+/F2 10 Tf
+60 280 Td
+(5. Actionable Recommendations - Refactoring steps) Tj
+ET
+
+BT
+/F1 14 Tf
+50 240 Td
+(Technical Specifications) Tj
+ET
+
+BT
+/F2 11 Tf
+50 215 Td
+(Platform: AWS Lambda (Serverless)) Tj
+ET
+
+BT
+/F2 11 Tf
+50 200 Td
+(Runtime: Python 3.11) Tj
+ET
+
+BT
+/F2 11 Tf
+50 185 Td
+(Frontend: HTML5 with GitHub-inspired Dark Theme) Tj
+ET
+
+BT
+/F2 11 Tf
+50 170 Td
+(API: RESTful with AWS Lambda Function URL) Tj
+ET
+
+BT
+/F2 11 Tf
+50 155 Td
+(Region: us-east-1) Tj
+ET
+
+BT
+/F2 11 Tf
+50 140 Td
+(AI Engine: Google Gemini API) Tj
+ET
+
+BT
+/F1 14 Tf
+50 100 Td
+(Quick Links) Aj
+ET
+
+BT
+/F2 11 Tf
+50 75 Td
+(Repository: https://github.com/ashisht1/smart-ai-code-reviewer) Tj
+ET
+
+BT
+/F2 11 Tf
+50 60 Td
+(GitHub Actions: https://github.com/ashisht1/smart-ai-code-reviewer/actions) Tj
+ET
+
+BT
+/F2 9 Tf
+50 30 Td
+(Generated: June 7, 2026 - Smart AI Code Reviewer Deployment) Tj
+ET
+endstream
+endobj
+
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000000323 00000 n 
+0000000402 00000 n 
+trailer
+<<
+/Size 7
+/Root 1 0 R
+>>
+startxref
+3653
+%%EOF
