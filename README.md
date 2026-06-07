@@ -16,6 +16,7 @@ A **serverless, Git-like AI code review platform**. Paste Python code, set custo
 | 📝 **Custom Guidelines** | Create and save custom coding standards in a dedicated guidelines tab for persistent use |
 | ⚡ **Zero Dependencies** | Uses only Python stdlib (`ast`, `urllib`) — no packages needed on Lambda |
 | 🚀 **One-Command Deploy** | `deploy_to_aws.py` automates IAM, Lambda, and API Gateway setup end-to-end |
+| 🔄 **Automated CI/CD** | GitHub Actions automatically deploys to AWS Lambda on every push |
 
 ---
 
@@ -48,6 +49,7 @@ smart_code_reviewer/
 ├── guidelines.txt       # Custom coding guidelines template
 ├── test_sample.py       # Sample code with intentional flaws for testing
 ├── requirements.txt     # Python dependencies (google-generativeai, rich)
+├── .github/workflows/deploy.yml  # GitHub Actions CI/CD workflow
 └── README.md            # This file
 ```
 
@@ -94,6 +96,24 @@ The script will:
 
 ---
 
+## 🔄 Automated CI/CD Deployment
+
+Every push to the `main` branch automatically triggers a GitHub Actions workflow that:
+
+1. ✅ Checks out your code
+2. 🐍 Sets up Python 3.11
+3. 📦 Installs dependencies (boto3)
+4. 🔑 Configures AWS credentials from secrets
+5. 🚀 Runs `deploy_to_aws.py` to update Lambda
+6. 📊 Reports deployment status
+
+**Required GitHub Secrets** (Settings → Secrets and variables → Actions):
+- `AWS_ACCESS_KEY_ID` - Your AWS access key
+- `AWS_SECRET_ACCESS_KEY` - Your AWS secret key
+- `GEMINI_API_KEY` - Your Google Gemini API key
+
+---
+
 ## 📋 Custom Guidelines
 
 Create or edit guidelines in the **Guidelines** tab to define your team's coding standards. Your guidelines are saved locally in your browser and will be used for all future reviews:
@@ -125,8 +145,9 @@ The AI will use your guidelines as its review persona — leave it empty to use 
 ## 🛡️ Security Notes
 
 - The API is public (no auth). For production, add API Gateway authorization.
-- Never commit your `GEMINI_API_KEY` — set it as a Lambda environment variable via AWS Console.
+- Never commit your `GEMINI_API_KEY` — set it as a Lambda environment variable via AWS Console or GitHub Secrets.
 - The Lambda function only reads code strings you explicitly send — no filesystem access.
+- Access keys are stored as encrypted GitHub Secrets and only used during deployment.
 
 ---
 
@@ -137,6 +158,9 @@ AWS Lambda has a **250 MB deployment package limit**. Using pure `urllib` calls 
 
 ### Why API Gateway instead of Lambda Function URLs?
 Lambda Function URLs return `403 Forbidden` on root AWS accounts due to account-level SCPs. API Gateway HTTP API is universally compatible and adds CORS support.
+
+### Why GitHub Actions for CI/CD?
+Automated deployments ensure your code is always up-to-date on AWS Lambda without manual steps. Every push triggers a fresh deployment with zero downtime.
 
 ---
 
