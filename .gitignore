@@ -1,0 +1,10 @@
+# Sensitive files
+deployment.zip
+__pycache__/
+*.pyc
+*.pyo
+.env
+.DS_Store
+
+# Review output (generated at runtime)
+review_report.md
