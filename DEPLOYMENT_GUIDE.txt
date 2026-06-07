@@ -1,0 +1,120 @@
+================================================================================
+                    SMART AI CODE REVIEWER
+                    Deployment Guide & Access Information
+================================================================================
+
+🚀 APPLICATION SUCCESSFULLY DEPLOYED!
+
+================================================================================
+LIVE APPLICATION URL
+================================================================================
+
+https://8ftqsyucec.execute-api.us-east-1.amazonaws.com/
+
+Click the link above to access your Smart AI Code Reviewer running on AWS Lambda.
+
+================================================================================
+FEATURES & CAPABILITIES
+================================================================================
+
+CODE ANALYSIS:
+  • Paste Python code for automated AI-powered review
+  • Static AST-based code metrics and analysis
+  • Custom review guidelines
+  • Real-time feedback
+
+METRICS DASHBOARD:
+  • Total Lines of Code
+  • Number of Functions & Classes
+  • Code Complexity (Decision Points)
+  • Missing Docstrings
+  • Global State Analysis
+
+AI-POWERED REVIEW SECTIONS:
+  1. Executive Summary - General code quality rating
+  2. Readability & Styling - Naming conventions, style, comments
+  3. Design & Structure - Architecture, modularity, design flaws
+  4. Maintainability & Bugs - Error handling, edge cases, inefficiencies
+  5. Actionable Recommendations - Concrete refactoring steps with examples
+
+================================================================================
+TECHNICAL SPECIFICATIONS
+================================================================================
+
+Platform:         AWS Lambda (Serverless)
+Runtime:          Python 3.11
+Frontend:         HTML5 with GitHub-inspired Dark Theme
+API:              RESTful with AWS Lambda Function URL
+Region:           us-east-1
+AI Engine:        Google Gemini API (2.5 Flash)
+Database:         Stateless (No persistence)
+CORS:             Enabled for public access
+
+================================================================================
+DEPLOYMENT DETAILS
+================================================================================
+
+Deployment Method:    GitHub Actions CI/CD
+Code Repository:      ashisht1/smart-ai-code-reviewer
+Deploy Trigger:       Automatic on push to main/master branches
+Function Name:        smart-code-reviewer
+Memory:               128 MB
+Timeout:              30 seconds
+COLD START:           < 2 seconds
+
+================================================================================
+QUICK LINKS
+================================================================================
+
+Application URL:
+  https://8ftqsyucec.execute-api.us-east-1.amazonaws.com/
+
+GitHub Repository:
+  https://github.com/ashisht1/smart-ai-code-reviewer
+
+GitHub Actions Dashboard:
+  https://github.com/ashisht1/smart-ai-code-reviewer/actions
+
+Files:
+  • lambda_function.py - Backend logic
+  • index.html - Frontend UI
+  • deploy_to_aws.py - Deployment script
+  • .github/workflows/deploy.yml - CI/CD workflow
+
+================================================================================
+HOW TO USE
+================================================================================
+
+1. Open the application URL in your browser
+2. Paste Python code in the sidebar
+3. (Optional) Customize review guidelines
+4. Click "⚡ Run AI Review" button
+5. View metrics dashboard and AI review report
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+If deployment fails:
+  • Check GitHub Actions workflow logs
+  • Verify AWS credentials are set correctly
+  • Ensure GEMINI_API_KEY is configured
+
+If the app doesn't load:
+  • Verify the Function URL is accessible
+  • Check browser console for errors
+  • Ensure Lambda function is deployed
+
+================================================================================
+SUPPORT
+================================================================================
+
+For issues or questions:
+  • GitHub Issues: https://github.com/ashisht1/smart-ai-code-reviewer/issues
+  • Check deployment logs in GitHub Actions
+  • Review AWS Lambda CloudWatch logs
+
+================================================================================
+Generated: June 7, 2026
+Smart AI Code Reviewer - Serverless AI-Powered Code Review Tool
+================================================================================
