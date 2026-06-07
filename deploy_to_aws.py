@@ -80,6 +80,11 @@ def deploy_lambda(zip_path, role_arn, api_key):
             FunctionName=FUNCTION_NAME,
             ZipFile=zip_bytes
         )
+        # Wait for code update to complete before updating configuration
+        # This prevents ResourceConflictException during concurrent updates
+        print("Waiting 5 seconds for code update to propagate...")
+        time.sleep(5)
+        
         # Update environment variables
         awslambda.update_function_configuration(
             FunctionName=FUNCTION_NAME,
